@@ -24,7 +24,7 @@ def record(ask=False):
         return voice
 
 def response(voice):
-    if  "ne haber" in voice:
+    if "ne haber" in voice:
         speak('iyiyim sen nasılsın')
     if "nasılsın" in voice:
             speak('iyiyim sen nasılsın')
@@ -54,8 +54,23 @@ def response(voice):
 
     if "Yapay zeka nedir  nasıl çalışır" in voice:
            speak(" yapay zeka farklı yöntem ve teknolojiler ile birlikte çalışır.")
-
-
+        if "Yapay zeka güvenlik açıkları nelerdir ve nasıl önlenebilirler" in voice
+            speak("Yapay zekâ, insanlar da dahil olmak üzere hayvanlar tarafından görüntülenen doğal zekânın aksine makineler tarafından görüntülenen zekâ çeşididir")
+    if "Yapay zeka etik kuralları nelerdir" in voice
+        speak("Eğitim ve farkındalık İnsan odaklı yaklaşım.Yapay zekada şeffaflık ve güvenliğe öncelik vermek")
+    if "yapay zeka uygulamları hangi programlarla yazlır" in voice
+                speak("c++,mattlab,lush,lisp,prolog,java")
+        if"hiç okula gittinmi" in voice
+            speak("ben bir yapay zekayım okula gidemem")
+        if"kaç yaşındasın" in voice
+            speak("ben bir yapay zekayım belirli bir yaşım yok")
+        if"zaman neden sadece ileri akar" in voice
+            speak("Termodinamiğin ikinci yasasına göre; ısı asla daha soğuk ve düşük enerjili bölgeden daha sıcak ve yüksek enerjili bir bölgeye akmaz. Yani entropi azalmaz. Yani düzensizlik azalmaz. Bu sebeple zaman da sürekli ileriye, düzensizliğe doğru tek yönde akar.")
+        if"cinsiyetin nedir" in voice
+            speak("ben bir yapay zeka olduğum için belirli bir cinsiyetim yok")
+        if"ne zaman doğdun" in voice
+            speak("ben bir yapay zeka olduğum için belirli bir doğum tarihim yok")
+       
 def speak(string):
     tts = gTTS(string, lang='tr')
     rand = random.randint(1, 10000)
